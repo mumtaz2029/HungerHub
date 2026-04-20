@@ -4,6 +4,11 @@ HungerHub is a Java 21 Maven WAR web application built for Apache Tomcat 9. This
 
 The frontend is a modern single-page food delivery interface for **HungerHub** with featured cuisines, customer favorites, testimonials, and app download sections. The backend uses a Java Servlet API endpoint to serve menu data to the UI.
 
+
+
+<img width="1917" height="1026" alt="Screenshot 2026-04-20 150630" src="https://github.com/user-attachments/assets/55db5064-0cda-4ca7-bbe8-620c9574bb88" />
+
+
 ## Project Objective
 
 The main goal of this project is to implement and document multiple deployment strategies for the same Java web application on Apache Tomcat:
@@ -108,10 +113,14 @@ The manual deployment process is documented with screenshots showing:
 
 - Selecting `hungerhub.war` from the local `target` folder.
 
+
+
 <img width="1919" height="1036" alt="Screenshot 2026-04-20 150554" src="https://github.com/user-attachments/assets/11b209e8-c999-415f-9853-9705a567b1b4" />
 
 
 - Uploading the WAR file through the Tomcat Manager deployment section.
+
+
 
 
 <img width="1910" height="1029" alt="Screenshot 2026-04-20 150613" src="https://github.com/user-attachments/assets/8853e262-3a6f-4bbe-b3a6-542f51ae2424" />

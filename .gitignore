@@ -1,11 +1,6 @@
 # Local Netlify folder
 .netlify
 
-# Java / Maven
-target/
-*.class
-*.war
-
 # IDE / OS
 .idea/
 .vscode/

@@ -1,17 +1,17 @@
 # HungerHub
 
-HungerHub is a Java 21 Maven WAR web application built for Apache Tomcat 9. The project was created as a DevOps practice application to demonstrate manual deployment, Jenkins freestyle CI/CD, Jenkins pipeline CI/CD, and automated artifact storage in an Amazon S3 bucket.
+HungerHub is a Java 21 Maven WAR web application built for Apache Tomcat 9. This repository is structured as a multi-deployment DevOps project that demonstrates manual deployment, Jenkins Freestyle CI/CD, Jenkins Pipeline CI/CD, and automated artifact storage in an Amazon S3 bucket.
 
 The frontend is a modern single-page food delivery interface for **HungerHub** with featured cuisines, customer favorites, testimonials, and app download sections. The backend uses a Java Servlet API endpoint to serve menu data to the UI.
 
 ## Project Objective
 
-The main goal of this project is to practice deploying a Java web application to Tomcat in multiple real-world DevOps ways:
+The main goal of this project is to implement and document multiple deployment strategies for the same Java web application on Apache Tomcat:
 
 1. Manual WAR deployment using the Tomcat Manager UI.
 2. Automated build and deployment using a Jenkins Freestyle Job.
 3. Automated build and deployment using a Jenkins Pipeline Job.
-4. Storing generated deployment artifacts in an Amazon S3 bucket through pipeline automation.
+4. Automated storage of generated deployment artifacts in an Amazon S3 bucket.
 
 ## Tech Stack
 
@@ -66,7 +66,7 @@ This WAR file is the deployable artifact used in Tomcat.
 
 ## Deployment Method 1: Manual Deployment Using Tomcat Manager
 
-This method was used to understand the basic Tomcat deployment flow before automating it with Jenkins.
+This method documents the direct Tomcat Manager deployment flow before the same release process is automated through Jenkins.
 
 ### Steps Followed
 
@@ -120,11 +120,11 @@ Screenshots used for documentation:
 
 ## Deployment Method 2: Jenkins Freestyle Job CI/CD
 
-After completing manual deployment, the next step was to automate the build and deployment using a Jenkins Freestyle Job.
+After completing manual deployment, the next deployment approach automates the build and deployment using a Jenkins Freestyle Job.
 
 ### Purpose
 
-The freestyle job was created to automate the CI/CD process without writing a Jenkins pipeline script. This helped practice Jenkins job configuration through the UI.
+The Freestyle Job automates the CI/CD process through Jenkins UI configuration, showing how the application can be built and deployed without a pipeline script.
 
 ### Steps Followed
 
@@ -177,7 +177,7 @@ The Jenkins Freestyle Job successfully automated:
 
 ## Deployment Method 3: Jenkins Pipeline Job CI/CD
 
-The final deployment method was done using a Jenkins Pipeline Job. This approach is closer to real DevOps CI/CD workflows because the build, deployment, and artifact handling stages can be managed as a pipeline.
+The final deployment method uses a Jenkins Pipeline Job. This approach organizes checkout, build, deployment, and artifact handling into a structured CI/CD workflow.
 
 ### Purpose
 
@@ -189,7 +189,7 @@ The pipeline job was created to automate the complete deployment lifecycle:
 - Deploy the WAR file to Tomcat.
 - Store the generated deployment artifact in Amazon S3.
 
-### Pipeline Job Stages Practiced
+### Pipeline Job Stages
 
 The Jenkins Pipeline Job followed this general flow:
 
@@ -233,7 +233,7 @@ The Jenkins Pipeline Job successfully automated:
 
 ## Artifact Storage In Amazon S3
 
-As an additional DevOps practice, the deployed WAR artifacts were stored in an S3 bucket through Jenkins pipeline automation.
+As part of the multi-deployment workflow, the deployed WAR artifacts were stored in an S3 bucket through Jenkins pipeline automation.
 
 ### Why S3 Artifact Storage Was Added
 
@@ -297,16 +297,15 @@ After deployment, the application can be accessed from Tomcat using:
 http://<tomcat-server-ip>:8080/hungerhub/
 ```
 
-## Key Learnings
+## Project Highlights
 
-- How to build a Java web application as a WAR file using Maven.
-- How to manually deploy a WAR file using Tomcat Manager.
-- How Jenkins Freestyle Jobs automate build and deployment steps.
-- How Jenkins Pipeline Jobs provide a structured CI/CD workflow.
-- How to deploy a Java web application to Apache Tomcat 9.
-- How to store generated WAR artifacts in Amazon S3.
-- How GitHub, Jenkins, Maven, Tomcat, and S3 work together in a DevOps workflow.
+- Java web application packaged as a Maven WAR artifact.
+- Manual deployment through Apache Tomcat Manager.
+- Jenkins Freestyle Job for automated build and deployment.
+- Jenkins Pipeline Job for structured CI/CD automation.
+- Artifact backup and version retention using Amazon S3.
+- End-to-end integration of GitHub, Jenkins, Maven, Tomcat, and S3.
 
 ## Project Summary
 
-HungerHub is not only a food delivery web application, but also a complete DevOps deployment practice project. It demonstrates the journey from manual deployment to automated CI/CD using Jenkins, and finally to artifact storage using Amazon S3.
+HungerHub is both a food delivery web application and a complete multi-deployment DevOps project. It demonstrates how the same Java WAR application can be released manually, through Jenkins Freestyle automation, through Jenkins Pipeline automation, and with deployment artifacts preserved in Amazon S3.

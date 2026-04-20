@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HungerHub is a vibrant food delivery app for fast cravings, fresh favorites, and joyful ordering.">
+    <title>HungerHub | A Central Place To Satisfy Cravings</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="Main navigation">
+        <a class="brand" href="#top" aria-label="HungerHub home">
+            <span class="brand-mark">HH</span>
+            <span>HungerHub</span>
+        </a>
+        <div class="nav-links">
+            <a href="#cuisines">Cuisines</a>
+            <a href="#favorites">Favorites</a>
+            <a href="#download">Download</a>
+        </div>
+        <a class="nav-cta" href="#favorites">Order Now</a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero-section">
+        <div class="hero-copy">
+            <p class="eyebrow">Fresh food, faster smiles</p>
+            <h1>HungerHub</h1>
+            <p class="tagline">A central place to satisfy cravings.</p>
+            <p class="hero-text">Browse comforting classics, local legends, and sweet finishes from one colorful delivery hub built for hungry moments.</p>
+            <div class="hero-actions">
+                <a class="primary-button" href="#favorites">Order Now</a>
+                <a class="secondary-button" href="#how">See How It Works</a>
+            </div>
+            <div class="trust-strip" aria-label="Delivery highlights">
+                <span><strong>25 min</strong> average delivery</span>
+                <span><strong>4.8</strong> city rating</span>
+                <span><strong>120+</strong> kitchens</span>
+            </div>
+        </div>
+        <div class="hero-plate" aria-label="Colorful food delivery showcase">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1100&q=80" alt="A colorful table filled with fresh dishes">
+            <div class="floating-ticket">
+                <span class="ticket-icon">✓</span>
+                <span>Hot order arriving soon</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-panel" id="cuisines">
+        <div class="section-heading">
+            <p class="eyebrow">Featured cuisines</p>
+            <h2>Pick a craving lane</h2>
+        </div>
+        <div class="cuisine-grid">
+            <article class="cuisine-card pizza">
+                <span class="food-icon">🍕</span>
+                <h3>Pizza</h3>
+                <p>Wood-fired slices, loaded cheese pulls, and saucy late-night comfort.</p>
+            </article>
+            <article class="cuisine-card biryani">
+                <span class="food-icon">🍛</span>
+                <h3>Biryani</h3>
+                <p>Fragrant rice bowls with deep spice, tender layers, and cooling sides.</p>
+            </article>
+            <article class="cuisine-card burger">
+                <span class="food-icon">🍔</span>
+                <h3>Burgers</h3>
+                <p>Stacked, toasted, crisp, juicy, and ready for the first big bite.</p>
+            </article>
+            <article class="cuisine-card dessert">
+                <span class="food-icon">🍰</span>
+                <h3>Desserts</h3>
+                <p>Velvety cakes, creamy scoops, and tiny celebrations after every meal.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="how-section" id="how">
+        <div class="section-heading">
+            <p class="eyebrow">How it works</p>
+            <h2>Browse, order, enjoy</h2>
+        </div>
+        <div class="steps-grid">
+            <article class="step-card">
+                <span class="step-number">1</span>
+                <h3>Browse</h3>
+                <p>Explore cuisines, ratings, prices, and chef specials in a few quick taps.</p>
+            </article>
+            <article class="step-card">
+                <span class="step-number">2</span>
+                <h3>Order</h3>
+                <p>Customize dishes, apply offers, and check out with a clear delivery ETA.</p>
+            </article>
+            <article class="step-card">
+                <span class="step-number">3</span>
+                <h3>Enjoy</h3>
+                <p>Track the rider, unpack something delicious, and save favorites for next time.</p>
+            </article>
+        </div>
+    </section>
+
+    <section class="spotlight-section">
+        <div class="spotlight-copy">
+            <p class="eyebrow">Tonight's mood</p>
+            <h2>Group cravings, solved together</h2>
+            <p>HungerHub makes office lunches, family dinners, and weekend hangouts easier with shared carts, smart combos, and crowd-friendly packs.</p>
+        </div>
+        <div class="deal-board" aria-label="Meal bundle offers">
+            <div>
+                <span>Family feast</span>
+                <strong>Save 20%</strong>
+            </div>
+            <div>
+                <span>Lunch sprint</span>
+                <strong>Under ₹199</strong>
+            </div>
+            <div>
+                <span>Sweet finish</span>
+                <strong>Free dessert</strong>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-panel" id="favorites">
+        <div class="section-heading">
+            <p class="eyebrow">Customer favorites</p>
+            <h2>Dishes people reorder</h2>
+        </div>
+        <div class="favorites-grid" id="favoritesGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="section-heading">
+            <p class="eyebrow">Happy customers</p>
+            <h2>Fast words from full hearts</h2>
+        </div>
+        <div class="testimonial-grid">
+            <figure>
+                <blockquote>“The biryani arrived warm, packed beautifully, and somehow made Monday feel like a festival.”</blockquote>
+                <figcaption>Priya S.</figcaption>
+            </figure>
+            <figure>
+                <blockquote>“My team uses HungerHub for Friday lunch. Shared carts are a tiny miracle.”</blockquote>
+                <figcaption>Rahul M.</figcaption>
+            </figure>
+            <figure>
+                <blockquote>“The app feels quick, the dishes look real, and checkout never gets in my way.”</blockquote>
+                <figcaption>Ayesha K.</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="download-section" id="download">
+        <div>
+            <p class="eyebrow">Download the app</p>
+            <h2>Keep cravings one tap away</h2>
+            <p>Get faster reorders, delivery updates, exclusive app-only combos, and saved addresses.</p>
+        </div>
+        <div class="store-buttons" aria-label="App store links">
+            <a href="#" aria-label="Download HungerHub on iOS">
+                <span></span>
+                <strong>iOS App</strong>
+            </a>
+            <a href="#" aria-label="Download HungerHub on Android">
+                <span>▶</span>
+                <strong>Android App</strong>
+            </a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div>
+        <a class="brand footer-brand" href="#top">
+            <span class="brand-mark">HH</span>
+            <span>HungerHub</span>
+        </a>
+        <p>A central place to satisfy cravings.</p>
+    </div>
+    <address>
+        hello@hungerhub.example<br>
+        +91 98765 43210<br>
+        Hyderabad, India
+    </address>
+    <div class="social-links" aria-label="Social links">
+        <a href="#">Instagram</a>
+        <a href="#">X</a>
+        <a href="#">Facebook</a>
+    </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

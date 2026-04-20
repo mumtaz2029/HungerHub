@@ -107,13 +107,11 @@ This method documents the direct Tomcat Manager deployment flow before the same 
 The manual deployment process is documented with screenshots showing:
 
 - Selecting `hungerhub.war` from the local `target` folder.
-- Uploading the WAR file through the Tomcat Manager deployment section.
-
-Screenshots used for documentation:
 
 <img width="1919" height="1036" alt="Screenshot 2026-04-20 150554" src="https://github.com/user-attachments/assets/11b209e8-c999-415f-9853-9705a567b1b4" />
 
 
+- Uploading the WAR file through the Tomcat Manager deployment section.
 
 
 <img width="1910" height="1029" alt="Screenshot 2026-04-20 150613" src="https://github.com/user-attachments/assets/8853e262-3a6f-4bbe-b3a6-542f51ae2424" />
@@ -275,16 +273,14 @@ Amazon S3 Artifact Storage
 
 The Jenkins automation process is documented with two screen recordings:
 
-freestyle CI/CD
+### freestyle CI/CD Automation visual
 
 https://github.com/user-attachments/assets/dde8dcf9-22f7-47fd-bb9b-7274f23bf096
 
-pipeline CI/CD 
-
+### pipeline CI/CD Automation visual
 
 
 https://github.com/user-attachments/assets/f4a37145-9b51-4cb0-b73f-a28877df9fa0
-
 
 
 These recordings show the automated Jenkins deployment work, including Freestyle Job and Pipeline Job execution.

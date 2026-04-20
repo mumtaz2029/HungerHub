@@ -111,8 +111,12 @@ The manual deployment process is documented with screenshots showing:
 
 Screenshots used for documentation:
 
-- `Screenshot 2026-04-20 150554.png`
-- `Screenshot 2026-04-20 150613.png`
+<img width="1919" height="1036" alt="Screenshot 2026-04-20 150554" src="https://github.com/user-attachments/assets/11b209e8-c999-415f-9853-9705a567b1b4" />
+
+
+
+
+<img width="1910" height="1029" alt="Screenshot 2026-04-20 150613" src="https://github.com/user-attachments/assets/8853e262-3a6f-4bbe-b3a6-542f51ae2424" />
 
 ## Deployment Method 2: Jenkins Freestyle Job CI/CD
 
@@ -271,8 +275,17 @@ Amazon S3 Artifact Storage
 
 The Jenkins automation process is documented with two screen recordings:
 
-- `Screen Recording 2026-04-20 213339.mp4`
-- `Screen Recording 2026-04-20 230246.mp4`
+freestyle CI/CD
+
+https://github.com/user-attachments/assets/dde8dcf9-22f7-47fd-bb9b-7274f23bf096
+
+pipeline CI/CD 
+
+
+
+https://github.com/user-attachments/assets/f4a37145-9b51-4cb0-b73f-a28877df9fa0
+
+
 
 These recordings show the automated Jenkins deployment work, including Freestyle Job and Pipeline Job execution.
 
